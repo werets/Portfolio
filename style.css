@@ -1,0 +1,379 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #353131;
+}
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #333;
+    color: #fff;
+}
+
+.logo img {
+    height: 100px; /* adjust logo size */
+    width: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between logo and text */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00b894;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: rgb(172, 24, 24);
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+
+}
+.hero-content .btn {
+    background: white;
+    color: #764ba2;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hero-content .btn:hover {
+    background: #b17474;
+    color: white;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    
+
+}
+.about-content {
+    display: flex;
+align-items: center;
+justify-content: flex-start; 
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3), -5px -5px --15px rgba(255, 255, 255, 0.1);
+    transform: perspective(500px) rotateY(10deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: perspective(500px) rotateY(0deg) scale(1.05);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3), -10px -10px --20px rgba(255, 255, 255, 0.2);
+}
+.about {
+    display: show;
+    text-align: justify;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #e0e2dbc4, #eaeaea);
+   
+}
+
+.projects h3 {
+    font-size: 10 px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+/*.project cards layout */
+.project-cards {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap; /* Keep in one row */
+    overflow-x: auto; /* Horizontal scroll if needed */
+    padding: 10px;
+}
+.card{
+    display: inline-flex;
+
+}
+
+.project-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.project-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+
+/* individual project card styles */
+.card {
+    background: rgb(96, 243, 121);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: auto;
+}
+
+
+.card p {
+    font-size: 40px;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: center;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #c9c4c4;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #764ba2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #667eea;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #7c7878, #eaeaea);
+}
+
+.gallery h1 {
+    font-size: 2rem;
+    margin: 30px 0 15px;
+    color: #333;
+}
+
+.iframe-container {
+    margin: 0 auto 40px;
+    max-width: 800px;   /* bigger size */
+    width: 600px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Existing styles... (keep your current styles) */
+
+/* Show hamburger on small screens */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: rgb(172, 24, 24);
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Hide nav-links by default on small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+        padding: 20px;
+        z-index: 1000;
+        border-left: 1px solid #444;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    .project-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .iframe-container {
+        width: 100%;
+        max-width: 90%;
+        height: 300px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}

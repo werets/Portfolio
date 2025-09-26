@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf8f8;
+            margin: 0;
+            padding: 0;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgb(197, 194, 194);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .logo {
+            text-align: center; /* This can be moved to CSS if you prefer */
+            
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="address"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo" style="text-align: center;">
+            <img src="logo.png.png" alt="logo" width="160" />
+        </div>
+        
+        <h1>Enrollment Form</h1>
+        <form id="enrollment-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="address" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="(BECEd) Bachelor of Early Childhood Education">(BECEd) Bachelor of Early Childhood Education</option>
+                    <option value="(ACT) Associate in Computer Technology">(ACT) Associate in Computer Technology</option>
+                    <option value="(BSIT) Bachelor of Science in Information Technology">(BSIT) Bachelor of Science in Information Technology</option>
+                    <option value="(BTVTEd) Bachelor of Technical-Vocational Teacher Education">(BTVTEd) Bachelor of Technical-Vocational Teacher Education</option>
+                    <option value="(BSC) Bachelor of Science in Criminology">(BSC) Bachelor of Science in Criminology</option>
+                    <option value="Bachelor of Science in Pharmacy">Bachelor of Science in Pharmacy</option>
+                    <option value="(BSBA) Bachelor of Science in Business Administration">(BSBA) Bachelor of Science in Business Administration</option>
+<option value="(BSOA) Bachelor of Science in Office Administration">(BSOA) Bachelor of Science in Office Administration</option>
+<option value="(BSA) Bachelor of Science in Accountancy">(BSA) Bachelor of Science in Accountancy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit">Enroll</button>
+        </form>
+        
+    </div>
+</body>
+</html>

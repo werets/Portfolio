@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" type="image/png" href="images/icons.png">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="enrollmentsystem.html/logo.png.png" alt="My Logo">
+          </div>
+        <div class="nav-brand">
+            <h1>My Portfolio</h1>
+        </div>  
+
+        <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Navigation -->
+        <nav>
+           <ul class="nav-links" id="navLinks">
+                <li><a href="indexabout.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my work, skills, and projects.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="card" data-aos="zoom-in">
+      <p>Project 1</p>
+            <a href="enrollmentsystem.html/1stenroll.html" class="btn">View Details</a>
+        </div>
+  
+            <div class="card" data-aos="zoom-in">
+                <p>Project 2</p>
+               <a href="mypicture/Mygallery.html" class="btn">View Details</a>
+            </div>
+
+            <div class="card" data-aos="zoom-in">
+                <p>Project 3</p>
+            <a href="Mycourse.html/Mycourse.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder=" Message on personal " required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+
+    <!-- YouTube Section -->
+    <h1>🎥 My YouTube</h1>
+       <div class="iframe-container">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/ja7h7TRLw0k?list=RDja7h7TRLw0k&start_radio=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+    <!-- Map Section -->
+    <div class="iframe-container">
+    <h1>📍 My Location</h1>
+    <div class="mapouter" style="position:relative; text-align:right; width:500px; height:450px;">
+        <div class="gmap_canvas" style="overflow:hidden; background:none!important; width:500px; height:450px;">
+          <iframe width="600px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=silver's%20in%20surallah%20south%20cotabato&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div>
+        <a href="https://norsumediagroup.com/embed-google-map-website-free" target="_blank" rel="noopener noreferrer" class="gme-generated-link">Embed Map on Website for Free</a>
+        <style>
+         .mapouter{position:relative;text-align:right;} .gmap_canvas{overflow:hidden;background:none!important;} .gmap_canvas iframe{width:100%;height:100%;} .mapouter a{display:block;font-size:0.85em;text-align:center;padding:5px 0;color:#6c757d;text-decoration:none;} .gme-generated-link{display:none!important;}
+        </style>
+      </div>
+    </div>
+</div>
+</section>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="Js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('show');
+        });
+    });
+</script>
+</script>
+</body>
+</html>
