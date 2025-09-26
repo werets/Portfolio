@@ -47,6 +47,13 @@ nav ul li a:hover {
     color: #00b894;
 }
 
+.mypic {
+    width: 500px;         
+  height: 500px;        
+  border-radius: 50%;   
+  object-fit: cover;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
